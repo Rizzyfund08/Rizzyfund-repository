@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type"content=text/html; charset="UTF-8" />
+    <title>grid test</title>
+    <style type="text/css" media="all">
+:root {
+    --primary: #dbdbe7;
+}        
+    body {
+        background: var(--primary);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .text {
+        font-size: 150px;
+        text-align: center;
+        font-weight: bold; 
+        color: var(--primary);
+        text-shadow: -2px -2px 5px whitesmoke,2px 2px 5px #777;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .parent{
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .parent-1 {
+        box-shadow: -5px -5px 10px rgba(255, 225, 225, .8),5px 5px 10px rgba(5, 0, 10, .4);
+    }
+    .parent-2 {
+        box-shadow: inset -5px -5px 10px rgba(255, 225, 225, .8),inset 5px 5px 10px rgba(5, 0, 10, .4);
+    }
+    .child {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        background: var(--primary);
+    }
+    .child-1 {
+         box-shadow: inset -5px -5px 10px rgba(255, 225, 225, .8),inset 5px 5px 10px rgba(5, 0, 10, .4);
+    }
+    .child-2 {
+       box-shadow: -5px -5px 10px rgba(255, 225, 225, .8),5px 5px 10px rgba(5, 0, 10, .4);
+    }
+    .name {
+        font-size: 40px;
+        font-family: monospace;
+        color: #454545;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="parent parent-1">
+        <div class="child child-1 text">
+            I
+        </div>
+    <div class="name text">
+            THE BOSS    
+    </div>
+<div class="parent parent-2">
+    <div class="child child-2 text"style="font-size:80px">
+        AM
+    </div>
+</div>
+</body>
+</html>

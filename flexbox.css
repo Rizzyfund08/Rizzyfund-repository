@@ -1,0 +1,50 @@
+.flexbox {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    /*flex-direction: column */;
+    justify-content:center;
+    /*flex-wrap: nowrap */;
+    /*align-items: center;*/
+}
+.flexbox > div {
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    
+}
+@media screen ( max-width: 7600px;) {
+}
+.flexbox {
+    display: flex;
+    width: 70%;
+    height: 30vh;
+    flex-direction: row;
+}
+.grid-container {
+   margin: 10px;
+   padding: 10px;
+   background-color: grey;
+   gap: 10px;
+   height: 100vh;
+   display: grid;
+   grid-template-columns: 20% 80%;
+   grid-template-rows: 20% 60% 20% ;
+  /* grid-template-rows: auto auto ;*/
+   background-color: grey;
+}
+.grid-container > div {
+    background-color: yellow;
+    padding: 20px;
+    border: 1px solid;
+}
+.grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.grid-item2 {
+    width: 60%;
+}
+/*.grid-item3 {
+    width: 80%;
+} */

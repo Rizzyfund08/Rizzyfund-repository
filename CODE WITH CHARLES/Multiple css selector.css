@@ -1,0 +1,478 @@
+/* MULTIPLE CSS SELECTOR */
+#Constant {
+    color: #696cff;
+    border-bottom: 3px solid green;
+}
+div > div > p{
+    border-bottom: 2px solid #480101;
+    color: red;
+}
+
+.Gradient {
+    background: linear-gradient(to right, #f0b206 -10%, #3a5602 100%);
+    background-clip: text;
+    color: transparent;
+}
+/* THE + SELECTOR */
+div + p {
+    background-color: yellow;
+}
+
+/* div ~ p {
+    background-color: #696cff;
+    color: white;
+*/
+/* General Sibling Selector */
+.Sibling {
+    background-color: rgb(56, 56, 106); 
+    color: #2dc404;
+    width: 250px;
+    padding: 50px;
+    margin: 40px;
+    border-radius: 11px;
+    box-shadow: 5px 5px 10px #2bbc03e0,
+                -5px -5px 10px #a0e904;
+}
+
+/*Box Model*/
+.content {
+    background-color: blue; 
+    width: 300px;
+    padding: 50px;
+    margin: 40px;
+    border-radius: 11px;
+    background: #7a7c02d2;
+    box-shadow: 5px 5px 10px #fd0404e0,
+                -5px -5px 10px #140002;
+}
+
+/*manipulating box model.A single value will apply the same padding to all side of the box*/
+
+#padding1 {
+    padding: 5px;
+    background-color: plum;
+    border: 5px solid green;
+}
+/*two value will aplly as:
+   first valu:vertical side;
+   second value:horizontal side*/
+#padding2 {
+    padding: 8px 10px;
+    background-color: plum;
+    border: 5px solid green;
+} 
+/* three value will apply as:
+  first value: top side,
+  second value : horizontal side,
+  third value: bottom side;*/
+#padding3 {
+    padding: 4px 13px 20px;
+    background-color: plum;
+    border: 5px solid green;
+}  
+/*four value will apply as:
+  first value: top side,
+  second value : right side,
+  third value: bottom side;
+  forth value: left side*/
+#padding4 {
+    padding: 5px 20px 40px 15px;
+    background-color: plum;
+    border: 5px solid green;
+} 
+.div {
+    padding: 20px;
+}
+
+/* span design box 
+span {
+    background-color: plum;
+    border: 5px solid green;
+}
+ */   
+
+/* BORDER TYPES */
+#border1 {
+    border: 5px dotted #696cff;
+}
+#border2 {
+    border: 5px double green ;
+}
+#border3 {
+    border: 5px solid red;
+}
+ #border4 {
+    border: 5px violet groove;
+}
+#border5 {
+    border: 5px blue dashed;
+}
+#border6 {
+    border: 8px brown ridge;
+}
+#border7 {
+    border: 7px burlywood outset;
+}
+#border8 {
+    border: 6px bisque inset;
+}
+/* RELATIVE VS ABSOLUTE MEASUREMENTS */
+#CHW {
+    width: 100%;
+    color: #8c0305f7;
+    background-color: rgb(167, 27, 5); 
+    width: 300px;
+    padding: 50px;
+    margin: 40px;
+    border-radius: 500px;
+    background: #527902;
+    box-shadow: 5px 5px 10px #fd0404e0,
+                -5px -5px 10px #140002;
+    border: 5px double rgb(2, 177, 17);
+}
+#shape {
+    color: #ed8b02f7;
+    background-color: blue; 
+    width: 300px;
+    padding: 50px;
+    margin: 40px;
+    border-radius: 500px;
+    background: #080800d2;
+    box-shadow: 5px 5px 10px #fd0404e0,
+                -5px -5px 10px #140002;
+    border: 7px solid rgb(2, 63, 177);
+}
+
+/* MORE ON CSS BORDER */
+#Border-radius {
+    border-bottom: 10px solid rgb(147, 92, 3);
+    color: rgb(147, 92, 3);
+    background-color: rgba(0, 0, 3, 0.982);
+    margin:90px;
+    padding: 10px;
+    width: 60%;
+    border-radius: 25px 10px  25px 10px;
+    border-top: 10px solid rgb(147, 92, 3);
+}
+
+/*CSS MARGIN */
+/* 1 value: margin applied as same on all side */
+#margin1 {
+    margin: 10px; 
+    padding: 5px;
+    background: rgb(243, 243, 240);
+    border-color: #bdfa06;
+    background-color: rgba(197, 255, 8, 0.733);
+    border: 5px solid rgb(133, 178, 133);
+}
+
+/* 2 value: margin applied as vertical side and horizontal side */
+#margin2 {
+    margin: 10px 20px;
+    padding: 5px;
+    background-color: #959f81;
+    border-color: #140002;
+}
+
+/* 3 value: margin applied as top - horizontal- bottom sides */
+#margin3 {
+    margin: 10px 20px 40px;
+    padding: 5px;
+    background-color: #f0e4a8;
+    border-color: #c4505b;
+}
+
+/* 4 value: margin applied as top - right - bottom - left sides */
+#margin4 {
+    margin: 10px 20px 30px 40px;
+    padding: 5px;
+    background-color: plum;
+    border: 5px solid green;
+}
+/* MARGIN BOX DESIGN */
+.spanBox {
+    border: 3px dashed rebeccapurple;
+    margin: 15px;
+    float: left;
+    padding: 25px;
+    
+}
+.padding {
+    padding: 10px ;
+    display: inline-block;
+}
+
+/* USING RGB VALUES */
+.Violet {
+    border: 5px solid rgb(199, 0, 150);
+    border-radius: 10px;
+}
+
+/* HEXADECIMAL COLOR VALUE */
+#bordereds {
+    padding: 50px;
+    box-sizing: border-box;
+    background: #01101b88;
+    box-shadow: 2px 14px 20px #220267; 
+    border-style: solid;
+    border-width: thick;
+}
+div h3 {
+    font-size: 2em;
+    text-align: center;
+    border-bottom: solid 3px #337bee;
+    box-shadow: 2px 14px 20px #070500;
+}
+#ColorBox {
+    height: 160px;
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+    border-bottom: solid 3px #337bee;
+    box-shadow: 2px 14px 20px #412f00;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#SliderBox {
+    margin: 15px 50px;
+}
+.Slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 3px;
+    border-radius: 50px;
+    background: #f7ce016b;
+    border: 10px solid green !important;
+    padding: 30px;  padding: 30px !important;
+   
+}
+.Slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* SLIDER COLOR THUMB OR CURSOR BOX */
+.Slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#redSlider::-webkit-slider-thumb {
+    background: rgb(255, 0, 0);
+}
+#redSlider::-moz-range-thumb {
+    background: rgb(255, 0, 0);
+}
+#greenSlider::-webkit-slider-thumb {
+    background: rgb(0, 255, 0);
+}
+#greenSlider::-moz-range-thumb  {
+    background: rgb(0, 255, 0);
+}
+#blueSlider::-webkit-slider-thumb {
+    background: rgb(0, 0, 255);
+}
+#blueSlider::-moz-range-thumb {
+    background: rgb(0, 0, 255);
+}
+
+/* TEXT SIZING WITH REMS */
+.div {
+    font-size: 200%;
+}
+.small {
+    font-size: 0.8rem;
+}
+.normal {
+    font-size: 1rem;
+}
+.big {
+    font-size: 3rem;
+}
+.BIGTEXT {
+    text-align: center;
+    justify-content: baseline;
+    background-color: #272b272b;
+    border-radius: 20px 20px;
+    color: #3403f8b8;
+}
+/*NFT LOGIN PAGE WITH HTML AND CSS*/
+#NFT {
+    box-shadow: 10px 7px 50px orangered;
+    filter: drop-shadow(10px 7px 10px orangered);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.loader:after {
+    content: "";
+    font-weight: 550;
+    font-size: 90px;
+    color: rgb(186, 216, 240);
+    animation-name: animatingtext;
+    animation-duration: 1800ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animatingtext {
+  0% { content: "N"; } 
+  5% { content: "NF"; }
+  10% { content: "NFT"; }
+  15% { content: "NFT l"; }
+  20% { content: "NFT lo";}
+  25% { content: "NFT log";}
+  30% { content: "NFT logi";}
+  35% { content: "NFT login";}
+  40% { content: "NFT login p";}
+  45% { content: "NFT login pa";}
+  50% { content: "NFT login pag";}
+  55% {content: "NFT login page";}
+  60% {content: "NFT login page w";}
+  65% {content: "NFT login page wi";}
+  70% {content: "NFT login page wit";}
+  75% {content: "NFT login page with";}
+  77% {content: "NFT login page with H";}
+  80% {content: "NFT login page with HT";}
+  84% {content: "NFT login page with HTML";}
+  85% {content: "NFT login page with HTML ";}
+  88% {content: "NFT login page with HTML &";}
+  90% {content: "NFT login page with HTML & CS";}
+  93% {content: "NFT login page with HTML & CSS";}
+  95% {content: "NFT login page with HTML & CSS..";}
+  98% {content: "NFT login page with HTML & CSS...";}
+  100% {content: "NFT login page with HTML & CSS.......";}
+}
+
+/*PART 1: APPLYING CSS TO THE FIRST CARD */
+/* For The Image Class In The First Card */
+.Image {
+   background-image: url('Tainsei-NFT-Collection-Japanese-Art-meets-Ethereum-900x425.jpg');
+   background-size: 300px 400px;
+   background-color: white;
+   color: #db6e14;
+   width: 296px;
+   height: 400px;
+   display: inline-block;
+   /* INLINE-BLOCK property allowed us to apply a width and height to the image element.*/
+   position: absolute;
+   border-radius: 15px 15px 200px 200px;
+
+}
+
+/* For The Left And Right Div Id's Of The First Card */
+#Left {
+    border-radius: 15px 0px 0px 15px;
+}
+#Right {
+    border-radius: 15px 15px 15px 0px;
+}
+#Left, #Right {
+    display: inline-block;
+    width: 146px;
+    height: 500px;
+    background-color: #db6e14;
+}
+
+/* For The Cardclick And Firstbox Classes */
+.Cardclick {
+    position: absolute;
+    width: auto;
+    height: auto;
+    border-radius: 15px 15px 15px 15px;
+}
+.Firstbox {
+    background-color: wheat;
+    display: inline-block;
+    border-radius: 15px 15px 15px 15px;
+}
+
+/* To Custormise The Sign In, Sign Up And Main Header Of The First Card*/
+
+
+
+.S1class {
+    color: wheat;
+    position: absolute;
+    bottom: -25%;
+    left: -40% !important;
+    padding: 150px;
+    margin: 20px;
+    height: 50px;
+}
+
+.S1class span, .S2class span {
+    display: block;
+}
+.S2class {
+    color: wheat;
+    position: absolute;
+    bottom: -7%;
+    right: -10%;
+    padding: 50px;
+    margin: 10px;
+    height: -10px;
+}
+.Mainheader {
+    color: blanchedalmond; 
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* PART 2:APPLYING CSS TO THE SECOND CARD i.e FORM */
+/* For The Card And Username */
+.Card2 {
+    background-color: #db6e14;
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    position: absolute;
+    left: 350px;
+   display: inline-block;
+}
+/* Form fill Box */
+.Username {
+    font-weight: bold;
+    width: 230px;
+    margin: 0 35px 20px;
+    height: 45px;
+    padding: 6px 15px;
+    border-radius: 5px;
+    border: none;
+    background: #f6f7f9;
+    font-size: 14px;
+}
+/* For The Sign Up Header and Button Below password*/
+.btn {
+    font-weight: bold;
+    width: 230px;
+    margin: 0 35px 20px;
+    height: 45px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #db6e14;
+    background-color: wheat;
+    font-size: 14px;
+}
+/*signup at the form top in username box*/
+.Signup1 {
+    color: wheat;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* For The forget Password Area*/
+a {
+    text-decoration: none;
+    /* We Select The Anchor Tag Seperately And Apllied text-decoration: none; to get Rid of It's blue Text Colour.*/ 
+}
+.Forgetpassword {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -70px;
+}

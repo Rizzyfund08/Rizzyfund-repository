@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Multiple css selector.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <title>Multiple selector</title>
+</head>
+<body>
+    
+    <fieldset>
+        <legend>
+            <h1>Multiple Css Selector</h1></legend>
+            <div>
+                <h1 id="Constant">Let's select Nested Elements with css</h1>
+                <p>We can specify to only style element within this div.</p>
+                <div>
+                    <p>Elements can have any level of nesting and still be selected correctly.</p>
+                </div>
+            </div>
+            <div class="Gradient">
+               <h1>This element will not have a border.</h1>
+            </div>
+    </fieldset>
+
+    <fieldset><legend><h1>The + selector</h1></legend>
+     <h2>Adjacent sibling selector</h2>
+    
+    <p>The + selector is used to select an element that is direcectly after another specific elements.</p>
+    <p>The following example select the first p element that are placed immediately after div elements.</p>
+
+    <div>
+        <p>paragraph 1 in the div</p>
+        <p>paragrap 2 in the div.</p>
+    </div>
+
+    <p>paragraph 3.after a div.</p>
+    <p>paragraph 4.after a div.</p>
+
+    <div>
+        <p>paragraph 5 in the div.</p>
+        <p>paragraph 6 in the div.</p>
+    </div>
+    <p>paragraph 7.after a div.</p>
+    <p>paragraph 8.after a div.</p>
+    </fieldset>
+
+
+    <fieldset><legend><h1>General Sibling Selector(~)</h1></legend>
+        <p class="Sibling">The general sibling selector selects all elements that are next sibling of a specified elements.<br>The following example selects all/*P*/elements that are next siblings of /*div*/elements.
+        </div></p>
+    </fieldset>
+    <h1>The Box Model</h1>
+    <p><b>Content:</b>The content of the box,where text and image appear.</p>
+    <p><b>Padding:</b>Clears an arrear around the content.The padding is transparent</p>
+    <p><b>Border:</b>A border that goes around the padding and the contents.</p>
+    <p><b>Margin:</b>clear an arrear outside the border.The margin is also transparents.</p>
+    <fieldset>
+        <legend><h2>Demostrating the box model</h2></legend>
+        <p>The CSS box model is essentially a box that wraps around every HTML elements.It conist of :<b></b>borders,padding,margins<b></b>,and the actual contents.</p>
+       <div class="content">
+        <p>This text is the contents of the box.we have added a 50px padding, 20px margin and a 5px green border. ut enim ad minim veniam, quis nostrud exercitation ullamco laborri nisi ut aliquipex eacommode consequat.duis aute irure dolor in reprehenderit in voluptate vellit eecillum dolore eu fugiat nullapariatur class Excepteur sint  occacaecat cupidatat nom proident, idest laborrum.</p>
+       </div>
+    </fieldset>
+
+
+    <h1>Manipulating the box model</h1>
+    <p><b>1.height and Width:</b>use the HEIGHT and WIDTH Css properties  to change the height and width of an elements content area e.g.<br><b>.task button {<br>
+        height: 100%;<br>
+        width: 40px;<br>
+        background-color:#9e0808;<br>
+        color: #fff;<br>
+        border-radius: 5px;<br>
+    }</b><br>
+    you can actively see width and height in usein this example css for .task and button.<br>
+    <b>2.padding:</b>use the padding attributes to create space between an element's contents area and border.the padding propertyies applies this spacing in various way's depending on the number of value's specify;e.g <br><br>when you specify the length as a percentage,the lenght is relative to the parent element's width. 
+    </p>
+   <fieldset><legend><h2>Css Padding</h2></legend>
+   <div class="padding">
+    <span id="padding1">First</span>
+    <span id="padding2">Second</span>
+    <span id="padding3">Third</span>
+    <span id="padding4">Fourth</span>
+   </div><br><br>
+   <p>creating different padding sizes</p>
+   </fieldset>
+   using more specific CSS properties,you can also apply padding to a single side of the elements,these include.
+   <ul>
+    <li>padding-bottom</li>
+    <li>padding-left</li>
+    <li>padding-right,and</li>
+    <li>padding-top</li>
+   </ul>
+   using more specific CSS properties,you can alo apply margin to a single side of the element,These include.
+   <ul>
+    <li>margin-bottom</li>
+    <li>margin-left</li>
+    <li>margin-right</li>
+    <li>margin-top</li>
+   </ul>
+   use the padding properties to provide space between an element's content area and border ,as seen in the sample below,the padding applies this in variety way's depending on the number of value you specify:Thee characteristics only allow a single value in absolute or relative length units.<br><br>
+    /* apply 10 percent (of parent element's width)worth of padding to the bottom sideof paragrah elements*/. <br>
+    <b>p  {
+        padding-bottom: 10%;
+    }<br></b>
+  <h1>BORDER</h1>
+  <fieldset>
+    <legend><h4>Creating Border With CSS</h4></legend>
+    <p id="border1">purple dotted border with css</p>
+    <p id="border2">green double border</p>
+    <p id="border3">red solid border</p>
+    <p id="border4">violet grooved border</p>
+    <p id="border5">blue dashed border</p>
+    <p id="border6"> brown ridge  border</p>
+    <p id="border7">burlywood outset border</p>
+    <p id="border8">bisque inset border</p>
+    The border property can be expanded into more finely style tuned property,such has [<b>border-style,border-color and border-width.</b>]These properties can be further expanded to target a specific side,e.g <b>border-top-width,border-left-style.and so on</b>
+  </fieldset>
+ <br>
+ <br><fieldset><legend><h1>RELATIVE VS ABSOLUTE MEASUREMENTS.</h1></legend>
+ <p>oftentimes, you will want to specify the lenght of the content area, padding, margin, etc. But how do we specify these lenghts ?.<br>The most common units used are percentage %, and the number of pixels px.<br>percentage are a measure of lenth that is relative. when using the percent unit to indicate length is measured relative to the length of the parent element:</p>
+  <div id="shape">
+    <h2 class="half">half-width of parent element.</h2>
+    <h2 class="quarter">quarter-width of parent element.</h2>
+  </div>
+  <div id="CHW">
+    <h2 class="half">half-width of parent element.</h2>
+    <h2 class="quarter">quarter-width of parent element.</h2>
+ </div>
+ <i>Notice the [*]sign in your Css. <br>This is a common techniques called a CSS RESET.Different browsers use different default margins,causing sites to look different by margins.The [*] means "all elements" (A UNIVERSAL SELECTOR),so we are setting all elements to have zero margins,and zero padding,thus  making them look the same in all browsers. <br>bcuzz we utillized a relative unit measurement,the length of the h1 element in the second div is half of the h1 in the first div ,despite both elements having identical CSS characteristics,specifying the numbr of pixels,on the other hand,produce an absolute lenght measurements.</i><br>Abolute measurements are fixed and do not depend on measurement from other HTML elements to be accurate.
+ <br></fieldset>
+ <br>
+    <fieldset>
+    <legend><h1>More On Css Border</h1></legend>
+    <b>BORDER RADIUS</b><br>If you want to create borders that have rounded corners, use the border-radius property. you can also create elliptical corners by providing two values to border-radius, seperated by a slash(/).
+    <h3>CSS Border Radius</h3>
+    <div id="Border-radius">
+        <h2 class="straight">Straight Corners</h2><hr>
+        <h2 class="Rounded">Rounded Corners</h2><hr>
+        <h2 class="Elliptical">Elliptical Corners</h2>
+        <script src="https://code.jquery.com/jquery-1.12.0.js"></script>
+    </div>
+
+    </fieldset>
+
+    <fieldset><legend><h3> CSS MARGIN</h3></legend>
+        <p>The margin property is very similar to the padding propety,except it allow you to define the spacing around the outside of an HTML elements past the border.like padding,it allow you to define single or multiplee values.</p>
+        <div class="spanBox">
+           <span id="margin1">One value: it has a border style</span>
+        </div>
+        <div class="spanBox">
+           <span id="margin2">Two value: it has none border style</span>
+        </div>
+        <div class="spanBox">
+           <span id="margin3">Three value</span>
+        </div>
+        <div class="spanBox">
+           <span id="margin4">Four value</span>
+        </div>
+    </fieldset>
+    In Above example,the space between the green and black borders represents the margin between the [span]Element and their [div]Containers. Margin can also be broken out into more fined-grained properties to target a specific side, including
+    <ul>
+        <li>margin-top</li>
+        <li>margin-left</li>
+        <li>margin-bottom</li>
+        <li>margin-right.</li>
+    </ul>
+    <fieldset><legend><h1>CSS COLOR</h1></legend>
+    <div style="text-align: center;">
+       <h1 style="background-color:Tomato">Tomato</h1>   
+       <h1 style="background-color:Orange">Orange</h1>   
+       <h1 style="background-color:Dodgerblue">Dodgerblue</h1>   
+       <h1 style="background-color:MediumSeaGreen">MediumSeaGreen</h1>   
+       <h1 style="background-color:Gray">Gray</h1>   
+       <h1 style="background-color:Slateblue">Slateblue</h1>   
+       <h1 style="background-color:Violet">Violet</h1>   
+       <h1 style="background-color:Lightgray">Lightgray</h1> 
+       <h1 style="background-color:Burlywood">Burlywood</h1> 
+    </div> 
+    </fieldset>
+      
+    <fieldset><legend><h3>Using RGB Values</h3></legend>
+        The use of Red, Green, and Blue parameters to create a colour is referred to as RGB VALUES. You may define a colour by specifying the intensity of each colour properties from 0 to 255. Drag the sliders below to view the colour pallette you may create using RGB VALUES. <br>     
+      <div class="Violet">
+        <p style="text-align: center;">This Div has a <em> Violet </em> border.</p>
+      </div>
+    </fieldset>
+   <Fieldset><Legend><h2>hex value</h2></Legend>
+      A colour code consists of a [ # ] followed by six hexadecimal digits iss used to specify hex values. The color black would be represented by the code #000000, and white  with the code #ffffff. <br>
+      <h4>WHAT ARE HEXADECIMAL DIGITS ?</h4>
+      hexadecimal refer to using base 16 asa numbering systems. what exactly does this mean?. <br>The most common numbering systems  uses a base of 10. This means that for each digit, there are ten possible values:
+      <ul>
+        <li>Ten different values may be expressed with a single digit [0 - 9]</li>
+        <li>One hundred [ten times ten ] possible values may be expressed using two digits [0 - 99]</li>
+      </ul> 
+      One number in a hexadecimal systems represent sixteen potential values. the fiorst ten numbers ae represent by 0 - 9, and the last six are A - F in hexadecimal rotation. <br><br>Because 
+      each hexadecimal digit may represent 16 different values, two digit can represent 16 * 16 for a total of 256.
+      <h4>Using Hexadecimal Colour Values</h4> 
+      The first two digit of hexadecimal color code indicate Red, and the third and fourth represent Green and the last two represent Blue. <br>This corresponds precisely to RGB valuessince each colour has 256 potential values[0 - 255]: 
+       <div id="bordereds">
+        <div>
+            <h3><code>rgb <span id="r">0</span>,<span id="g">0</span >,<span id="b">0</span></code></h3>
+            <h3><code># <span id="hexR">0</span><span id="hexG">0</span><span id="hexB">0</span></code></h3>
+            <div id="ColorBox"></div>
+            <div id="SliderBox">
+               <input type="range" value="0" min="0" max="200" class="Slider" id="redSlider"> 
+               <input type="range" value="0" min="0" max="200" class="Slider" id="greenSlider">
+               <input type="range" value="0" min="0" max="200" class="Slider" id="blueSlider">
+               <input hidden type="range" value="100" min="0" max="100" class="Slider" id="alphaSlider">
+            </div>
+            <script  type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.js"></script>
+            <script src="jquery-3.7.1.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script type="text/javascript" src="Script.js"></script>
+        </div>
+        </div>
+
+    </Fieldset> <br>
+     <b><i>Now that you have learned how to display colorful fonts and backgrounds, let's learn about font styling and web fonts.</i></b>
+    <fieldset><legend><h2>CSS FONT STYLE</h2></legend>
+      <h3>Font Selection Is Critical</h3>
+       Choosing the proper typeface significantly influence how reader interact with a websites. <br>
+       The appropriate typeface may help your business establish a distinctive identity. <br>
+       It is critical to have an easy-to-read typeface.The typeface improve the readability of your writing.It is also critical to choose a suitable font color and text size.
+       <h3>Generic Font Families</h3>In css,there are  Five generic font families:
+       <ol>
+        <li><b>serif</b> fonts -have a minor stroke at the edge of each letter. They create a sense of formality and elegance.</li>
+        <li><b>Sans-Serif</b> fonts- have clean lines (no small stroke attached). They create a modern and a minimalistics looks.</li>
+        <li><b>Monospace</b> fonts -here,all the letter have the same fixed width. They create a mechanical look.</li>
+        <li><b>Cursive </b> font- imitate human handwritting</li>
+        <li><b>Fantasy </b> fonts- are decorative/ playful fonts.</li>
+       </ol>
+       All the different font names belong to one of the generic font families. <br> To achieve optimal interoperability among browsers / operating sytems,the font families should store many font names as a "fallback" mechanism. Begin with the desired typeface and conclude with a generic family (to let the browser pick a similar font in the generic family if no other fonts are available). A comma should be used to seperate the font names.
+       <h2>TEXT ALIGNMENT + SIZING</h2>
+       <h3>TEXT ALIGNMENT</h3>
+       Text components are always aligned to the right of their container by default. use the TEXT-ALIGNED-ATTRIBUTES to adjust the alignment of text inside an element. there are four align atrributes:
+       <ul>
+        <li>CENTER: to center the text</li>
+        <li>LEFT: align the text to the left of it's container</li>
+        <li>RIGHT: align the text to the right of it's container</li>
+        <li>JUSTIFY: the text will pread out to fill out the full width  of it's container</li>
+       </ul>
+       <h3>TEXT SIZING</h3>The font-ize attribute allows you to modify the size of your text.
+       The font-size prameter accept both relative and absolute values.The most often used absolute values is px, while the most commonly used relative values is ems, rems. <br> The em and rem are both relative measurement values that function similarly to percentages in that they act as a multiplier in relation to another units of measurements. <br>
+       <b>In Terms Of Size:</b> 
+       <ul>
+        <li>1 em corresponds to the font-size of the element's parent.</li>
+        <li>1 rem is the font font-size of the root  element of the whole HTML page.</li>
+        <li>To change the height of a line of text, use the line height attributes.</li>
+       </ul>
+     <div style="background-color: rgb(220, 206, 4);">
+       <h3>Text Sizing With Rems</h3>
+       <p class="small">Small text</p>
+       <p class="normal">Normal text</p>
+       <p class="big">Big text</p>
+       <div>
+        <p class="small">Small text</p>
+        <p class="normal">Normal text</p>
+        <p class="big">Big text</p>
+       </div>
+      </div>
+    </fieldset>
+    <h4>Congratulation, we have come to the end of this introductory of CSS course. Be informed that CSS as a language is very diverse; we've only covered the basics and learnt enough to move forward in this course. There are still many areas but what is essential is understanding the concepts as Beginer.</h4>
+    <p>The possibilities in terms of design in CSS are endless , and it evolves everyday. The current trends is NEUMORPHISM and GLASSMORPHISM CSS. Google search will help. You can also learn CSS such as Tailwind or Bootstrap.</p>
+    <h1 class="BIGTEXT">THE END OF HTML + CSS <Br>See You In The JavaScript Class. </Br> </h1>
+    
+    <h1>Using Browser Developer Tools Part 1</h1>
+    The first of the tool is the HTML aspect,Informing you that the browser is written in HTML with CSS for styling AD JS for workabiliity.  <br><br>
+     You will notice different tabs at the  top of the developer tool pages. we will explore the <b>'ELEMENTS' </b> tab. <br><br>
+    When you highlight any element <b>(codes)</b>  on the pages, it show it's ascribed properties on the browser half of the page, as shown below. <br><br>
+    The Arrow beside <b>[body]</b> when clicked on expand the contents in the tag showing the different <b>[div]</b> elements. <br><br>
+    The arrow besides each <b>[div]</b> tag show the content of the selected <b> [div]</b> when clicked. <br><br>
+    You can make editions to codes as you deem fit, just like I have  done in the sample below Edited. <br><br>
+    The second half of the dev tool has the styling components of the browser we are exploring.it also has some tabs at the top of this half. <br><br>
+    Each elements has it's styling properties on the lower part of the page. Any element highlighted expands it's style properties in this half  of the tools. <br><br>
+    The <b>'Computed'</b>  button in the style half shows the margin, border, padding and main content of a particular element when selected. it is colour-coded, and the same colours show in the browser half when elements are highlighted. <br> <br>
+    To debug the page or find out why an element isn't applying, do the following.
+    <ol>
+        <li>Click the first button on the top left corner of the web tool. it look as shown in the image below. it give you access to the details of each elements on the front end i.e the browser half.</li>
+        <li>Hover your cursor over each elements in the frontend. The details are in a pop up menu format.</li>
+        <li>At the same time, the dev tools will bring upthe codes of the section selected to allow you make corrections easily.</li>
+    </ol>  
+    <em>This is the easiest way to find and fix a bug <br>This features is not only  limited to your browser alone. <br><br>SEE YOU THERE!.....</em>
+
+    <h1>Using Browser Developer Tools Part 2</h1>
+    <h4>Inspecting the aptlearn playground i.e Nav bar and Body Content With The Browser Developer Tool.</h4>
+    One of the benefit of this developer tools is that it allow you to inspect, understands and make temporary changes to the code behind every web page. <br><br>
+    In the next two example, we would inspect the code behind the navigation bar and the body of the aptlearn playground. <br><br>
+    First, Click on the arrow icon in the top left corner of the dialogue box, See below: <br><br>
+    Now,hover your mouse over any part of the playground page. In the dialogue box, you should see the HTML and CSS codes behind every element displayed. <br><br>
+    <strong>For The Nav Bar:</strong><br><br>
+    Hover your cursor over the nav bar and look at the element and styles section in the dialogue box. You would see the HTML and CSS codes used to bring the nav bar to life. <br><br>
+    Next,let's manipulate the CSS for the nav bar and see the results. To do this, uncheck the CSS properties of Z-index and box-shadow in the dialogue box. <br><br> 
+    You would notice that the laptop image begins to spill out of the page into the nav bar. This gives us an idea of the use of the Z-index property.Also see how, when thee boxes are checked, the laptop image no longer spills into the nav bar. See the image below: <br><br>
+    <strong>For The Body Contents:</strong> 
+    Hover your cursor over the content body of the while looking at the elements and styles section in the dialogue box. You would see the HTML and CSS code bring the nav bar to life. See Below: <br><br>
+    So far, we have demonstrated how you can inspect and manipulate HTML and CSS for aptlearn playground with dev tool. I encourage you to practice with more web pages. it's a great way to learn, understand and debug code. <br><br>
+    <h1>Using The Browser Developer Tool For Mobile Responsiveness.</h1>
+    Dev Tools make it easy to view how the result of your code look on different Mobile screen. To access this features, within the dialogue box, click on the screen icon located to the right of the arrrow icon. See below <br><br>
+    Select any phone Screen of your choice. Your website would be adjusted to fit. In the example,we used iphone SE. <br><br>
+    You can also  add a custom device by clicking on the edit option that comes up when you select the dimension box. Thereafter, select "add custom device" and then input the device name and screen dimensions. <br><br>
+    You can also check the media queries by clicking the three dot's at the top right-hand corner of the page and selecting "check media queries." See image; <br><br>
+    <h1>Manipulating a web page's javascript Using Browser Developer tools.</h1>
+    We can write and run a javascript uing our browser developer tool. <br>Yes,HTML and CSS are not the only part of a web page we  can make changes to using this  tools! <br><br>
+    To do this, navigate to and click on the console menu in the dialogue box. <br><br>
+    You can type the following code and then press enter to run it: <br><br><br>
+    <i style="background-color: rgb(246, 197, 132);
+              border: 5px solid rgb(199, 0, 150);
+              border-radius: 10px;
+              margin: 100px; 
+              padding: 15px;"><big>Console.log("I am learning at aptlearn")
+    </big></i><br><br><br>Your screen should look like this: <br><br>
+    Now, let's us fetch the nav bar elements of our source code using javaScript. Input the code below then press enter. <br><br>
+    <i style="background-color: rgb(246, 197, 132);
+              border: 5px solid rgb(199, 0, 150);
+              border-radius: 10px;
+              margin-left: 100px; 
+              position: absolute;
+              padding: 10px;"><big>Const nav = document.querySelector (' . nav Content ') <br> Console . log (nav)
+    </big></i><br><br><br><br><br>
+    Your results should look like this (See arrow below): <br><br>
+    You can move your cursor across your results and see the elements it selects in the aptlearn playground, E.G <br><br>
+    NOTE: You can view the entire source code of any webpage by clickingon "Source" in the dialogue box menu.!.... 
+    
+    <div class="loader">
+        <h1 id="NFT">NFT LOGIN PAGE WITH HTML & CSS</h1>
+    </div>
+   <!... FOR THE TOP NFT LOGIN...>
+    <div class="Cardclick">
+        <div class="Firstbox">
+            <div class="Image">
+                <h1 class="Mainheader">NFT LOGIN</h1>
+            </div>
+
+            <!... Your [DIV CLASS] can be anything, just take note of what it applies to. The value of each class should be different from the first div to avoid code conflicts when we want to start applying our css style.
+            FOR THE SIGN IN & SIGN UP ....>
+
+            <div id="Left"><h1 class="S1class"><span>SIGN</span><span>IN</span></h1></div>
+            <div id="Right"><h1 class="S2class"><span>SIGN </span><span>UP</span></h1></div>
+            <!.. The [span] element was used to break up the SIGN IN & SIGN UP texts so we can move them to the bottom later...>
+            <!..FOR THE SECOND CARD I.E THE SIGN UP FORM..>   
+        </div>
+        
+        <div class="Card2">
+            <form class="Signup">
+
+                <h1 class="Signup1">SIGN UP</h1>
+                <br><br>
+                <input name="Username" type="text" placeholder="Username*" class="Username">
+                <input name="email" type="text" placeholder="Email*" class="Username">
+                <input name="password" type="password" placeholder="Password*" class="Username">
+                   
+                <button class="btn">Sign Up</button>
+            </form>
+            <!..We applied the same class to the INPUT Element because we want to applied the same css to them.
+            ALSO,Notice how the input type is password,and not text in the password field. AS expected, we created a button to submit our form..
+            FOR THE FORGOTTEN PASSWORD SECTION..>
+            <form class="Signin">
+              <br><br><br><br>
+                <a href=""><p class="Forgetpassword">Forget Password </p></a>
+            </form> 
+            <!..IF you think about it, the forget password is a clickable links that direct you to another form to reset your password. Hence, We had to apply an ANCHOR TAG nested within the form element. 
+            Now that we have succesfylly built the html structure of our project through a step-wise approach,let' look atbthe entire code pictures. You can run the code and see the results of what we have built in this lesson.
+        </div>
+    </div> 
+    
+  
+
+</body>
+</html>
+
