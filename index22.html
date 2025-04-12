@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index22.css">
+</head>
+<body>
+    <h1>aptlearners live site</h1><br>
+    <fieldset>
+        <legend><h2>What Can JavaScript Do</h2></legend>
+        
+        <p id="LearningJs">JavaScript Can Change html Contents.</p>
+
+        <button type="button">Click Me !!!</button>
+    </fieldset><br><br>
+
+    <h1>query Selector () vs getElementById</h1><br>
+    <p>The apparent comparison between these twoconcepts is that they both select elements froma a web page. But they do so in various ways. <br><br><br> 
+    You may use a querySelector() statementstochoose an elements based on a Css Selector. This means you may select items based on their ID, class or any other form of a selector. 
+    You can only choose an elements by its ID when using the getElementById() function. <br><br>
+in general, You should choose the option that obviously does the task. <br> If you simply need to choose an element by it's ID or class , Use <br>
+ <b>getElementById  or  getElementByClassName.</b>  <br>
+<br> <span class="color">NOTES, The querySelector() technique is the best choice if you need to apply 
+    <br> a more complex rule to choose items. <br><br></span>
+Both <span class="color">querySelector and getElementById</span>  have been around for a long in JavaScript. <br>
+Consequently, both of these approaches are entirely supported by current Browser's.</p><br><br>
+<p>let delve a little further and look at the very first line of our code: <br><br>
+    <span style="background-color: rosybrown;padding: 10px;">Const button = document.querySelector('button');</span><br><br>
+    As You have learned in the previous lesson, Declaring a varriable is accomplished through the usage of the <span class="color">Let, var, or Const</span>Statements. <br><br> 
+    Going Forward,i will be using them interchangeably in oerder for you to understand thier use cases. Still, in this particularly example, I will be using <span class="color">Const</span> 
+    to declare the varriables. <br><br>  
+    a varriable is handy for storing information that we may wish to obtain later . <br><br>
+    Recalled that the code which appears following the equal symbols <span class="color"> (=) document.querySelector</span>assigns a value to a varriable. <br><br>
+    It does this by selecting first thing on the page that matches the selection contained inside a quotation marks and inserting it into the button varriable . <br><br>
+    As a Result, the firt line generates a varriable and assigns it to the first <span class="color"><big><b>Button</b></big></span> elements it encounter in our HTML documents code. <br><br>
+    However, even saving the <span class="color"><big><b>Button</b></big></span> is a tedious procedure. The next stepis to figure out how to interacts with the <span class="color"><big><b>Button</b></big></span>
+    element in question. <br><br>One of the common method is to include an events listener inour code, which inform our computer to perform code anytime a user interacts with the web page. <br>
+    <span class="color"><big>Button .onclick = function() {<br>
+    alert ("Hello, World!"); </big><br>}</span> <br>In the code above ,we tell the programes to execute the code store inside a <b>Function</b>when a user click on the button using <span class="color">(Onclick).</span><br><br>
+    <i>REMEMBER, Functions are used to store code you may want to execute more than once.<br><br> in this case,the function will create a pop-up with the message, " Hello World " every time a user click on the button.</i>
+</p>
+
+<script src="index22.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+* {
+    margin: 5px;
+}
+body {
+    background-color: #ececf6;
+    padding: 43px;
+}
+h1 {
+    color: #111111;
+    font-family: monospace;
+    text-align: center;
+}
+button {
+    border-radius: 5px;
+    background-color: #ded3d3;
+    color: #060af8;
+    width: 50%;
+    height: 40px;
+    margin-left: 26%;
+    background-color: rgba(222, 184, 135, 0.409);
+}
+p, h2 {
+    text-align: center;
+}
+.color {
+    color: rgb(183, 0, 255);
+    font-style: oblique;
+    font-size: large;
+}
