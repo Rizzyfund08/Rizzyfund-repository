@@ -121,6 +121,7 @@ margin-left: 30px;
 .sidebar {
     width: 250px; /*Fixed Width for Sidebar */
     background-color: #fff;
+    text-align: center;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -183,8 +184,8 @@ margin-left: 30px;
     display: flex;
     align-items: center;
     padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 12px 5px rgba(110, 98, 98, 0.247);
 }
 
 .hero-text {
@@ -200,6 +201,7 @@ margin-left: 30px;
 .hero-text p {
     color: #777;
     margin-bottom: 20px;
+    font-weight: 300;
 }
 
 .hero-text .price {
@@ -220,6 +222,7 @@ margin-left: 30px;
 .hero-image img {
     max-width: 100%;
     height: auto;
+    border-radius: 15px;
 }
 
 /* Featured Categories */
@@ -322,4 +325,250 @@ margin-left: 30px;
     font-style: italic;
     font-weight: bold;
     color: #555;
+}
+
+/* Media querries section */
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+       padding: 0 10px; /*Reduce padding on smaller screen */
+       
+    }
+    /* top-bar adjutments */
+    .top-bar .container {
+        flex-direction: column; /* stack contacts info and utility nav */
+        align-items: flex-start;
+    }
+
+    .top-bar .contact-info span {
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+
+    .top-bar .utility-nav {
+        display: flex; /* keep utilty nav items inline for now */
+        flex-wrap: wrap; /* allow items to wrap if space is tight */
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .top-bar .utility-nav a,
+    .currency-dropdown {
+        margin-left: 0;
+        margin-right: 15px;
+        margin-bottom: 5px;
+    }
+
+    /* Main navigation adjustments */
+    .main-nav .container {
+        flex-direction: column; /* Stack logo, search, nav links */
+        align-items: center;
+        gap: 15px; /*Space between stacked elements */
+    }
+
+    .main-nav .logo {
+        margin-bottom: 10px;
+    }
+
+    .main-nav .search-bar {
+        width: 100%; /*Full width for search bar */
+        max-width: 400px; /* prevent it from getting to wide */
+    }
+
+    .main-nav .search-bar input,
+    .main-nav .search-bar select,
+    .main-nav .search-bar button {
+        padding: 8px; /* Smaller padding */
+    }
+
+    .main-nav .nav-links {
+        flex-wrap: wrap; /*Allow  nav links to wrap */
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .main-nav .nav-links li {
+        margin: 0 10px 10px 10px; /*Adjust spacing for wrap items */
+    }
+
+    .main-nav .cart-wishlists {
+        margin-top: 10px;
+        width: 100%; /* Full width to allign icons */
+        text-align: center;
+    }
+    /* Main Contents Layout */
+    .main-content {
+        flex-direction: column; /*Stack sidebar and main product area*/
+    }
+
+    .sidebar {
+        width: 100%; /* Full width for sidebar */
+        order: 2; /*Place sidebar below main content on small screen*/
+    }
+
+    .product-display {
+        order: 1;/*Place product display above sidebar */
+    }
+
+    /* Hero section */
+    .hero-section {
+        flex-direction: column; /*Stack text and image */
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-text {
+        margin-bottom: 20px;
+    }
+    
+    .hero-text h2 {
+        font-size: 1.8em;
+    }
+    
+    .hero-text .price {
+        font-size: 1.5em;
+    }
+
+    .hero-image img {
+        max-width: 80%; /*Shrink image a bit  */
+    }
+
+    /* Features categories  */
+    .featured-categories {
+        flex-wrap: wrap; /*Allow categories to wrap */
+        justify-content: center;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .category-item {
+        flex-basis: 45%; /* Twoitems per row */
+        margin-bottom: 10px;
+    }
+
+    /* promo banners */
+    .promo-banners {
+        grid-template-columns: 1fr; /* Stack Banner Vertically */
+        gap: 15px;
+    }
+
+    .promo-banner {
+        padding: 15px;
+    }
+
+    /* Deals of the Day  */
+    .deals-of-day .container {
+        flex-direction: column; /*Stack elements */
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .deals-of-day .countdown {
+        width: 100%; /*Full width for countdown */
+        text-align: center;
+        padding: 8px 0;
+    }
+}
+
+/* Medium Devices (tablets, 601px to 992px) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Main navigation adjustments */
+    .main-nav .container {
+        flex-wrap: wrap;
+        /* allow elements to wrap */
+        justify-content: center;
+        gap: 15px;
+        /*Space between stacked elements */
+    }
+
+    .main-nav .logo {
+        flex-basis: 100%; /* Logo takes full width, centers */
+        text-align: center;
+    }
+
+    .main-nav .search-bar {
+        flex-grow: 1; /* search-bar takes available space */
+        max-width: 500px; /* limits its max - width */
+    }
+
+    .main-nav .nav-links {
+        flex-basis: 100%; /*Nav links takes full width */
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .main-nav .nav-links li {
+        margin: 0 15px; /*Adjust spacing */
+    }
+
+    .main-nav .cart-wishlists {
+        position: absolute; /*position them on the right */
+        right: 15px;
+        top: 205px; /*Adjust as needed */
+        padding-right: 50px;
+    }
+
+    /* Main Content  Layout adjustments */
+    .main-content {
+        flex-direction: column; /*Stack sidebar and main conten */ /* or i can use column-reverse*/
+        gap: 20px;
+    }
+
+    .sidebar {
+        width: 100%; /* Sidebar takes Full width */
+        text-align: center;
+        order: 2; /*place Side bar below main product area*/
+    }
+
+    .product-display {
+        order: 1;
+    }
+    /* Hero Section  */
+    .hero-section {
+        flex-direction: row; /*Keep as row, but adjust proportions */
+        padding: 25px;
+        border-radius: 19px;
+    }
+
+    .hero-text {
+        flex: 1.5; /* Give more space to text */
+        text-align: left;
+    }
+
+    .hero-image {
+        flex: 1;
+        text-align: right;
+    }
+
+    .hero-image img {
+        max-width: 90%;
+    }
+
+    /* Featured Categories */
+    .featured-categories {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .category-item {
+        flex-basis: calc(33% - 10px); /* Three items per Row, accounting for gap */
+        margin-bottom: 15px;
+    }
+
+    /* Promo Banners */
+    .promo-banners {
+        grid-template-columns: repeat(1, 1fr); /* Two column */
+        gap: 15px;
+    }
+
+    .promo-banners:last-child {
+        grid-column: span 2; /* Last banner spans two columns if odd number */
+       /* or , adjust grid-template-columns for an odd layout on tablets*/
+    }
 }

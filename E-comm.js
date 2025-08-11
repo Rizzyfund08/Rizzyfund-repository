@@ -56,4 +56,4 @@ window.onload = function () {
     // - Handling clicks on Cart/Wishlist Icons (e.g.. Opening a mini-cart)
     // -Any image carousels (if the hero section was a slider )
     //  "View All" button functionality
-}
+};
